@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: klinik-app
-        image: riqimaruq/klinik:1 # {"$imagepolicy": "flux-system:klinik-policy"}
+        image: riqimaruq/klinik:16 # {"$imagepolicy": "flux-system:klinik-policy"}
         ports:
         - containerPort: 8080
