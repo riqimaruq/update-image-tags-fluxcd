@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: klinik
+  namespace: flux-system
+spec:
+  image: riqimaruq/klinik
+  interval: 1m
