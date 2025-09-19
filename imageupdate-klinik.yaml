@@ -20,8 +20,6 @@ spec:
     push:
       branch: main
     # <-- secretRef harus sejajar dengan push, bukan di dalam push
-    secretRef:
-      name: github-credentials
   update:
     path: "./"
     strategy: Setters
