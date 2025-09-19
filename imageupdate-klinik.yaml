@@ -19,8 +19,8 @@ spec:
         name: fluxcdbot
     push:
       branch: main
-    secretRef:
-      name: github-credentials   # <--- tambahkan ini
+      secretRef:
+        name: github-credentials   # <-- pindahkan ke sini
   update:
     path: "./"
     strategy: Setters
