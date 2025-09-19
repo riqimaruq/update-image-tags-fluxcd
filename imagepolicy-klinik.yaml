@@ -8,4 +8,4 @@ spec:
     name: klinik
   policy:
     numerical:
-      order: asc
+      order: desc
