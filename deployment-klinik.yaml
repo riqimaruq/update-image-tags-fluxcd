@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: klinik-app
-        image: riqimaruq/klinik:27 # {"$imagepolicy": "learning-image:klinik-policy"}
+        image: riqimaruq/klinik:28 # {"$imagepolicy": "learning-image:klinik-policy"}
         ports:
         - containerPort: 80
