@@ -1,4 +1,4 @@
-apiVersion: image.toolkit.fluxcd.io/v1beta2
+apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
   name: klinik-automation
@@ -8,18 +8,17 @@ spec:
   sourceRef:
     kind: GitRepository
     name: update-image-tags
-    name: flux-system
+    namespace: flux-system
   git:
     checkout:
       ref:
         branch: main
     commit:
       author:
-        name: fluxcdbot
         email: fluxcdbot@users.noreply.github.com
-      messageTemplate: "update image to {{range .Updated.Images}}{{.NewTag}}{{end}}"
+        name: fluxcdbot
     push:
       branch: main
   update:
-    path: ./
+    path: "./"
     strategy: Setters
